@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+  <name>hive.aux.jars.path</name>
+  <value>file:///usr/local/hive/apache-hive-1.2.1-bin/lib/hive-hbase-handler-1.2.1.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/protobuf
+-java-2.5.0.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/hbase-client-1.0.3.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/hbase-c
+ommon-1.0.3.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/zookeeper-3.4.6.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/guava-14.0
+.1.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/hbase-protocol-1.0.3.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/htrace-core-3.
+0.4.jar,file:///usr/local/hive/apache-hive-1.2.1-bin/lib/hbase-server-1.0.3.jar
+</value>
+</property>
+<property>
+  <name>hbase.zookeeper.quorum</name>
+  <value>mrzhang-virtual-machine</value>
+</property>
+<property>
+   <name>javax.jdo.option.ConnectionURL</name>
+   <value>jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true</value>
+</property>
+<property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+   <value>com.mysql.jdbc.Driver</value>
+</property>
+<property>
+   <name>javax.jdo.option.ConnectionUserName</name>
+   <value>hive</value>
+</property>
+<property>
+   <name>javax.jdo.option.ConnectionPassword</name>
+    <value>hive</value>
+</property>
+<property> 
+    <name>hive.metastore.warehouse.dir</name> 
+    <value>/home/hadoop/hive/warehouse</value> 
+</property>
+<property>
+      <name>hive.metastore.uris</name>
+      <value>thrift://localhost:9083</value>
+      <description></description>
+</property>
+</configuration>
